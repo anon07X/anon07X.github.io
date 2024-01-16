@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Düzce Rehberi - Hakkımızda</title>
+  <link rel="icon" type="image/x-icon" href="../kucuk_fotograflar/düzce_icon (1).png">
+  <!---------------Kütüphaneler------------->
+     <link rel="stylesheet" href="sayfalar.css">
+     <script src="sayfalar.js"></script>
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!---------------------------------------->
+  <style>
+ .body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: moveUpDown 20s linear infinite alternate;
+  filter: blur(3px);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+}
+
+
+
+    .main-container {
+  text-align: center;
+  position: relative;
+}
+
+.main {
+  max-width: 600px;
+  padding: 20px;
+  text-align: left;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  border-left-width: 100px solid;
+  border-right-width: 100px solid;
+
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.301);
+  position: relative;
+  z-index: 1; 
+}
+
+p {
+    font-weight: 600;
+}
+
+.main::before,
+.main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(5px); 
+  z-index: -1; 
+}
+
+.main::before {
+  background-color: rgba(193, 255, 248, 0.650); 
+}
+  </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+          <a href="../giris_ekranı.html"><img src="..//kucuk_fotograflar/düzce_icon (1).png" alt="Düzce Logo"></a>
+        </div>
+        <h1 class="site-baslik">Düzce Rehberi</h1>
+      
+     <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-#58a4b0">
+           <button onclick="toggleMenu()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+          <div id="myMenu" class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">| Anasayfa |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Hakkımızda.html">| Hakkımızda |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sehrin_tarihi.html">| Tarihi |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="yemekleri.html">| Yemekleri |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="turistlik_yerler.html">| Turistlik Yerler |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../giris_ekranı.html">| Giriş Yap |</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+     </div>
+    </header>
+    <br/>
+
+    <div class="main-container">
+        <div class="main">
+            <h2 style="text-align: center;">DÜZCE REHBERİ - Düzce'yi Keşfedin!</h2>
+            <p>
+             Merhaba Düzce severler! Düzce Rehberi'ne hoş geldiniz, şehrimizin eşsiz güzelliklerini,
+             tarihi zenginliklerini ve keyifli mekanlarını keşfetmeye hazır olun. Bu platform,
+             Düzce'nin en güncel ve kapsamlı rehberini sunarak şehrimizin zengin kültürünü ve
+             doğal güzelliklerini sizlere taşıyor.
+            </p>
+            <p>
+             🏰 <b>Tarihi ve Kültürel Keşifler:</b> Düzce'nin tarihini ve kültürünü keşfetmek isteyenler için
+             özenle seçilmiş tarihi mekanlar, müzeler ve festivaller hakkında bilgiler içeriyoruz.
+             Düzce Kalesi, Konuralp Müzesi ve diğer tarihi yapılar sizleri bekliyor.
+            </p>
+            <p>
+             🌳 <b>Doğal Güzellikler:</b> Düzce'nin muazzam doğal güzelliklerini yakından görmek
+             isteyen doğaseverler için özel rotalar ve piknik noktaları önerileri sunuyoruz. Gölyaka,
+             Akçakoca ve Yığılca gibi eşsiz doğa bölgelerini keşfetmek için rehberimizi inceleyin.
+            </p>
+            <p>
+             🍽️ <b>Lezzet Durakları:</b> Düzce'nin yöresel lezzetlerini tatmak isteyenlere özel olarak
+             seçilmiş restoranlar, kafeler ve yöresel mutfakları tanıtıyoruz. Yöresel lezzetlerle tanışın,
+             yerel tatları keşfedin.
+            </p>
+            <p>
+             🎓 <b>Eğitim ve Kültür:</b> Düzce'nin eğitim alanındaki önemli kurumlarına ve kültür
+             etkinliklerine dair bilgiler sunuyoruz. Düzce Üniversitesi'nin sunduğu imkanlar ve
+             kültür-sanat etkinlikleri ile ilgili güncel haberlere ulaşın.
+            </p>
+            <p>
+             Düzce Rehberi, şehrimizin her yönünü kapsayan kapsamlı bir kaynaktır. Siz de Düzce'yi
+             en iyi şekilde keşfetmek ve bu güzellikleri yaşamak istiyorsanız, Düzce Rehberi sizin
+             yanınızda!
+            </p>
+            <p>
+             Düzce'yi yaşamak için en iyi rehber sizinle! Hadi Düzce'yi birlikte keşfedin!
+            </p>
+        </div>
+      </div>
+
+    <div class=".body">
+      <div class="background-container">
+        <img src="../slayt/düzce_8.jpg" alt="Background 1">
+        <img src="../slayt/d_8.jpg" alt="Background 2">
+      </div>
+    </div>
+
+    <br/>
+
+</body>
+
+  <footer>
+       <p>&copy; 2023 Düzce Rehberi</p>
+    <div class="SosyalMedya">
+     <table style="margin-left: 5px; text-align: left;">
+       <tr>
+         <td><a href="https://www.instagram.com/duzcevaliligi/" target="_blank">
+         <img style="height: 20px; width: auto;" src="../kucuk_fotograflar/ıns.png">@duzcevaliligi</a></td>
+       </tr>
+       <tr>
+         <td><a href="https://twitter.com/duzce_valiligi" target="_blank">
+         <img style="height: 20px; width: auto;" src="../kucuk_fotograflar/x.png">@duzce_valiligi</a></td>
+       </tr>
+       <tr>
+         <td><a href="https://www.youtube.com/@duzcebelediyesi3159" target="_blank">
+         <img style="height: 20px; width: auto;" src="../kucuk_fotograflar/yt.png">@duzcebelediyesi3159</a></td>
+       </tr>
+     </table>
+    </div>
+ </footer>
+
+</html>

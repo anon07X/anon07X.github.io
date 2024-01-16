@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Düzce Rehberi - Tarihi</title>
+  <link rel="icon" type="image/x-icon" href="../kucuk_fotograflar/düzce_icon (1).png">
+  <!---------------Kütüphaneler------------->
+     <link rel="stylesheet" href="sayfalar.css">
+     <script src="sayfalar.js"></script>
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!---------------------------------------->
+  <style>
+ .body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: moveUpDown 20s linear infinite alternate;
+  filter: blur(3px);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+}
+
+
+
+    .main-container {
+  text-align: center;
+  position: relative;
+}
+
+.main {
+  max-width: 600px;
+  padding: 20px;
+  text-align: left;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  border-left-width: 100px solid;
+  border-right-width: 100px solid;
+
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.301);
+  position: relative;
+  z-index: 1; 
+}
+
+p {
+    font-weight: 600;
+}
+
+.main::before,
+.main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1; 
+}
+
+.main::before {
+  background-color: rgba(193, 255, 248, 0.650); 
+}
+  </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+          <a href="../giris_ekranı.html"><img src="..//kucuk_fotograflar/düzce_icon (1).png" alt="Düzce Logo"></a>
+        </div>
+        <h1 class="site-baslik">Düzce Rehberi</h1>
+      
+     <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-#58a4b0">
+           <button onclick="toggleMenu()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+          <div id="myMenu" class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">| Anasayfa |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Hakkımızda.html">| Hakkımızda |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sehrin_tarihi.html">| Tarihi |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="yemekleri.html">| Yemekleri |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="turistlik_yerler.html">| Turistlik Yerler |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../giris_ekranı.html">| Giriş Yap |</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+     </div>
+    </header>
+   <br/>
+
+    <div class="main-container">
+        <div class="main">
+            <p>
+             Düzce'nin tarihi, Anadolu coğrafyasının kucaklayıcı tarihine derin bir katkı sunar. Bu 
+             topraklar, binlerce yıldır birçok medeniyetin etkisi altında kalarak zengin bir kültür ve
+             tarih mozaiği oluşturmuştur.
+            </p>
+            <p>
+             Antik dönemde, Düzce ve çevresi, Roma İmparatorluğu'nun sınırları içinde yer
+             almaktaydı. Roma döneminin izleri, antik yerleşim alanları, kalıntılar ve heykellerle bu
+             topraklarda hala hissedilebilmektedir. Roma İmparatorluğu'nun etkisi altında geçen bu
+             dönem, arkeologlar için önemli kazı alanlarına dönüşmüştür.
+            </p>
+            <p>
+             Bizans İmparatorluğu'nun hakimiyetinde, Düzce, Bizans kültürünün ve mimarisinin bir
+             parçası oldu. Kiliseler, manastırlar ve diğer dini yapılar bu dönemde inşa edildi. Bu
+             yapılar, bölgenin dini ve kültürel geçmişine dair önemli ipuçları sunmaktadır. 
+            </p>
+            <p>
+             Osmanlı İmparatorluğu'nun fetihleriyle birlikte Düzce, Osmanlı topraklarına katıldı. Bu
+             dönemde tarım ve ticaret, bölgenin ekonomik yaşamının temelini oluşturdu. Osmanlı
+             mimarisinin izlerini taşıyan eski konaklar ve çeşmeler, şehrin tarihini anlamak
+             isteyenlere görsel bir şölen sunmaktadır.
+            </p>
+            <p>
+             1. yüzyılın başlarına kadar resmi bir il merkezi olarak kabul edilmeyen Düzce, 1999              
+             yılında meydana gelen Marmara Depremi ile adını geniş kitlelere duyurdu. Bu doğal
+             felaketin ardından kent, yeniden yapılanma ve gelişme sürecine girdi. Altyapı
+             çalışmaları, modern binalar ve yaşam standartlarının artırılması, Düzce'nin 21. yüzyılda
+             modern bir şehir haline gelmesine olanak tanıdı.
+            </p>
+            <p>
+             Düzce'nin antik dönemdeki tarihi hakkında kesin tarihler vermek zordur ve net bir
+             şekilde belirlenmemiş olabilir. Bu nedenle genel bir ifade kullanmak daha uygun
+             olacaktır. Eğer daha spesifik bilgiler arıyorsanız, arkeolojik kaynaklara veya bölge
+             tarihine odaklanmış daha ayrıntılı kaynaklara başvurmanız önerilir.
+            </p>
+        </div>
+      </div>
+
+      <div class=".body">
+        <div class="background-container">
+          <img src="../slayt/duzce_tarih.jpg" alt="Background 1">
+          <img src="../slayt/d_tar.jpg" alt="Background 2">
+        </div>
+      </div>
+      
+      <br/>
+
+</body>
+
+<footer>
+    <p>&copy; 2023 Düzce Rehberi</p>
+ <div class="SosyalMedya">
+  <table style="margin-left: 5px; text-align: left;">
+    <tr>
+      <td><a href="https://www.instagram.com/duzcevaliligi/" target="_blank">
+      <img style="height: 20px; width: auto;" src="../kucuk_fotograflar/ıns.png">@duzcevaliligi</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://twitter.com/duzce_valiligi" target="_blank">
+      <img style="height: 20px; width: auto;" src="../kucuk_fotograflar/x.png">@duzce_valiligi</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.youtube.com/@duzcebelediyesi3159" target="_blank">
+      <img style="height: 20px; width: auto;" src="../kucuk_fotograflar/yt.png">@duzcebelediyesi3159</a></td>
+    </tr>
+  </table>
+ </div>
+</footer>
+
+</html>
